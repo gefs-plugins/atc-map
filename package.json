@@ -8,7 +8,11 @@
         "requirejs": "^2.3.5"
 	},
     "devDependencies": {
-		"electron": "^1.7.9"
+		"electron": "^1.7.9",
+        "mime": "^2.0.3"
+    },
+    "scripts": {
+        "start": "node testing/index.js"
     },
 	"repository": {
 		"type": "git",
