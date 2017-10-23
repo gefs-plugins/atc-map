@@ -3,10 +3,13 @@
 	"version": "0.0.1",
     "description": "ATC map for GeoFS",
 	"dependencies": {
+        "almond": "^0.3.3",
         "bluebird": "^3.5.1",
-		"electron": "^1.7.9",
-		"request-promise": "^4.2.2"
+        "requirejs": "^2.3.5"
 	},
+    "devDependencies": {
+		"electron": "^1.7.9"
+    },
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/gefs-plugins/atc-map.git"
