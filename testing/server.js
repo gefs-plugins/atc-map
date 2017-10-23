@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 const Promise = require('bluebird');
 
@@ -26,9 +26,8 @@ function validate (response, absPath) {
 }
 
 function send404 (response) {
-	response.writeHead(404, { "Content-type": "text/plain" });
-	response.write("Error 404: Resource not found");
-	response.end();
+	response.writeHead(404, { "Content-type": "text/html" });
+	response.end("<h1>Error 404: Not Found</h1>");
 }
 
 function sendPage (response, filePath, fileContents) {

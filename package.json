@@ -12,7 +12,8 @@
         "mime": "^2.0.3"
     },
     "scripts": {
-        "start": "node testing/index.js"
+        "start": "electron testing/electron.js",
+		"server": "node testing/server.js"
     },
 	"repository": {
 		"type": "git",
