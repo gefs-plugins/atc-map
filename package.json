@@ -1,0 +1,20 @@
+{
+	"name": "atc-map",
+	"version": "0.0.1",
+    "description": "ATC map for GeoFS",
+	"dependencies": {
+        "bluebird": "^3.5.1",
+		"electron": "^1.7.9",
+		"request-promise": "^4.2.2"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/gefs-plugins/atc-map.git"
+	},
+	"license": "AGPL-3.0+",
+	"bugs": {
+		"url": "https://github.com/gefs-plugins/atc-map/issues"
+	},
+	"homepage": "https://github.com/gefs-plugins/atc-map#readme",
+	"private": true
+}
