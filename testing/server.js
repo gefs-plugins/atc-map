@@ -6,11 +6,11 @@ const http = require('http');
 const path = require('path');
 const fs = Promise.promisifyAll(require('fs'));
 const mime = require('mime');
+const url = require('url');
 
 http.createServer((request, response) => {
-	let filePath;
-	if (request.url === '/') filePath = 'source/map.html';
-	else filePath = request.url;
+	let filePath = url.parse(request.url).pathname;
+	if (filePath === '/') filePath = 'source/map.html';
 
 	validate(response, `./${filePath}`);
 }).listen(8080);
